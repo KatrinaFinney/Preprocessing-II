@@ -1,1 +1,52 @@
 // Follow the order in the readme
+
+
+//Imports
+@import "variables.less";
+@import "mixins.less";
+@import "reset.less";
+@import "global.less";
+@import "navigation.less";
+@import "footer.less";
+@import "home-page.less";
+
+
+
+
+//less
+
+.btn-cont{
+    .custom-btn();
+
+   
+    
+}
+
+
+@media @phone{
+    body{
+        .custom-layout(center,center);
+    }
+}
+
+.btn{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+body{
+    @media @phone{
+      
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      
+    }
+}
+
+
+
+
+
+

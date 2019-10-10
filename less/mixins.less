@@ -1,1 +1,25 @@
 // Mixins in here
+
+.custom-layout(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+}
+.custom-btn(){
+    display: block;
+    background-color: #1E90FF;
+    margin: 0 10px 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    .custom-layout(center,center);
+  
+    @media(max-width: 500px) {
+        width: 90%;
+        height: 50px;
+        font-size: 2.5rem;
+    }
+  
+  }
